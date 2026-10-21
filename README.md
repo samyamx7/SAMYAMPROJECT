@@ -1,21 +1,41 @@
-# Silicon Brief — 2026 Semiconductor Industry Newsroom
+# Guide to Comparing Domestic Franchises — Korean Coffee Brands
 
-A responsive, student-friendly semiconductor industry explainer built with plain HTML, CSS, and JavaScript. All styles and the theme toggle are included in `index.html`, so no build step is required.
+**Creator:** Samyam Poudel  
+**Project type:** Student mission / bilingual comparison webpage  
+**Industry:** Coffee franchises in South Korea  
+**Comparison subjects:** MEGA MGC COFFEE (메가MGC커피), COMPOSE COFFEE (컴포즈커피), PAIK'S COFFEE (빽다방)
 
-## Mission
-Research the 2026 semiconductor industry, verify claims against original sources, explain the developments in simple language, and publish a webpage.
+## Project description
+A responsive, single-file webpage that introduces three Korean coffee franchises in simple English with Korean translations. It compares one metric only: the number of franchise locations at year-end 2024. The page includes ascending and descending sort buttons, four search queries with explanations of how search results differ, and source links.
 
-## Run locally
-Open `index.html` in any modern browser.
+## Metric and base year
+- **Metric:** Franchise-store count (not annual revenue and not company-owned store count).
+- **Base year:** Year-end 2024.
+- **Unit:** Stores / locations.
+- **Values shown provisionally:** MEGA MGC COFFEE 3,325; COMPOSE COFFEE 2,649; PAIK'S COFFEE 1,712.
+- **Data-quality note:** The counts are listed in a secondary comparison table that says it uses KFTC franchise-disclosure data. The page explicitly says the brand-specific counts still need confirmation in the original KFTC disclosure records; they are not described as independently verified.
 
-## Deploy on Vercel
-This is a static website. Import this repository into Vercel (or connect the existing Vercel project to it), set Framework Preset to **Other**, and leave the build command empty. Ensure the root directory contains `index.html`. Deploy.
+## Tools used
+- ChatGPT: drafted the bilingual explanatory content and webpage structure.
+- Perplexity / web search: research workflow recommended for cross-checking original sources before submission.
+- HTML, CSS, JavaScript: responsive single-file webpage and client-side sorting.
+- GitHub: source control and hosting repository.
+- Vercel: static website deployment workflow.
 
 ## Research sources
-- TSMC Q3 2026 results filed with the U.S. SEC: https://www.sec.gov/Archives/edgar/data/1046179/000104617926000726/a3q26e_withguidancexfinal.htm
-- SEMI equipment sales forecast (July 2026): https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-sales-forecast-to-reach-a-record-229-billion-dollars-in-2028-semi-reports
-- Counterpoint Research, Foundry 2.0 market analysis (June 2026): https://counterpointresearch.com/en/insights/global-foundry-revenue-rises-q1-2-206-ai-demand
-- TSMC official newsroom: https://pr.tsmc.com/english/latest-news
+1. Korea Fair Trade Commission franchise disclosure system: https://franchise.ftc.go.kr/
+2. Francha coffee franchise comparison (secondary table of 2024 year-end counts): https://francha.craftspace.co.kr/sector/coffee
+3. MEGA MGC COFFEE official website: https://mega-mgccoffee.com/
+4. COMPOSE COFFEE official website: https://composecoffee.com/
+5. PAIK'S COFFEE official website: https://paikdabang.com/
+6. KFTC announcement on 2024 franchise statistics: https://www.ftc.go.kr/www/selectBbsNttView.do?bordCd=3&key=12&nttSn=45987&pageIndex=1&pageUnit=10&searchCnd=all&searchCtgry=01%2C02
 
-## Research integrity
-Use Perplexity to discover and cross-check reports, but open the original source links before using statistics. Distinguish company-reported results from forecasts and check each figure's date, unit, and definition. The page is for education, not investment advice.
+## Three specific details verified or modified
+1. Chose three brands from the same industry: Korean coffee franchises.
+2. Kept the comparison to one metric and one base year: franchise locations at year-end 2024; did not mix in revenue figures.
+3. Added ascending/descending sort buttons that sort numeric store counts, four search-query explanations, bilingual content, and a clear note that exact counts should be checked against the original KFTC disclosures before formal submission.
+
+## Run and deploy
+- Open `index.html` in a modern browser. The webpage uses no external APIs or build tools.
+- For Vercel, connect this repository, select **Other** as the framework preset, leave the build command empty, and keep `index.html` in the repository root.
+- After deployment, test both sorting buttons on desktop and mobile and open the source links.
